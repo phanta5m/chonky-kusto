@@ -17,7 +17,9 @@ EmailEvents
 | extend ReportType = extract (@"(\w+)\:([\w\-]+)",1,Subject)
 | where ReportType has_any ("phishing","reportphishing")
 | extend OriginalNetworkMessageId = toguid(extract(@"(\w+)\:([\w\-]+)",2,Subject))
-| project ReportType, OriginalNetworkMessageId, ReportingUser = SenderDisplayName, Sender = SenderFromAddress
+| project ReportType, OriginalNetworkMessageId
+  ,ReportingUser = SenderDisplayName
+  ,Sender = SenderFromAddress
 | join EmailEvents on $left.OriginalNetworkMessageId == $right.NetworkMessageId
 | where Delivery Location has "junk"
 | summarize ReportedEmails = count_distinct(OriginalNetworkMessageId) by ReportingUser
