@@ -1,7 +1,7 @@
 ## Interactive sign-ins ; querying from ADX b/c nothing is slower than Entra
-
-###    1) The results here will show the location, auth details, device details, and risk events
-###    2) It will also render a pie chart allowing one to quickly see a pattern of sign-in locations (and any anomalies)
+###
+1) The results here will show the location, auth details, device details, and risk events
+2) It will also render a pie chart allowing one to quickly see a pattern of sign-in locations (and any anomalies)
 
 ```kusto
 let User 1 = dynamic(["username_here"]);
