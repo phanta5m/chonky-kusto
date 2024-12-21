@@ -1,7 +1,10 @@
 ## Non-interactive sign-ins
 
-#### A noisier set of results; 14 days due to the sheer volume of results that are possible.
-#### This a good way to see if a managed device is signing in from the foreign IP that fired an alert
+<p>
+A noisier set of results; 14 days due to the sheer volume of results that are possible.<br>
+Presenting the data in this way allows one to see which IPs are correlated with an Azure<br>
+managed device, which are less likely to pose a threat.                                                                                    
+</p>
 
 ```kusto
 let User 1 = dynamic(["username_here"]);
