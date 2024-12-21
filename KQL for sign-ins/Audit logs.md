@@ -1,5 +1,5 @@
 ## Audit logs
-### union of 2 tables: AADUserRiskEvents & AuditLogs
+### Union of 2 tables: AADUserRiskEvents & AuditLogs
 
 ``` kusto
 let User1 = dynamic(["username_here"]);
