@@ -1,6 +1,7 @@
 ## Non-interactive sign-ins
 
-### Set for 14 days b/c of the sheer volume of results it can return
+#### A noisier set of results; 14 days due to the sheer volume of results that are possible.
+#### This a good way to see if a managed device is signing in from the foreign IP that fired an alert
 
 ```kusto
 let User 1 = dynamic(["username_here"]);
