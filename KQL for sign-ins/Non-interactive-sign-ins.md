@@ -1,10 +1,8 @@
 ## Non-interactive sign-ins
 
-<p>
-A noisier set of results; 14 days due to the sheer volume of results that are possible.<br>
-Presenting the data in this way allows one to see which IPs are correlated with an Azure<br>
+- A noisier set of results; 14 days due to the sheer volume of results that are possible.
+- Presenting the data in this way allows one to see which IPs are correlated with an Azure
 managed device, which are less likely to pose a threat.                                                                                    
-</p>
 
 ```kusto
 let User 1 = dynamic(["username_here"]);
