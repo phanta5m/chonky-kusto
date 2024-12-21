@@ -15,7 +15,7 @@ or FileName matches regex @"^Aud.|.[A|a]ud" // any variation of 'Aud'
 or FileName matches regex @".[P|p]lay|[P|p]lay." // any variation of 'Play"
 or FileName matches regex @"[\d\W_][C][A-Z]{3}\.html$" // any 4 letter string starting with 'C" like 'CLRQ' which was a naming schema we identified in multiple campaigns
 | join EmailEvents on NetworkMessageId | where DeliveryAction == "Blocked"
-| where SenderFromDomain !in~ ("exclusion1.org","exclusion2.edu","exclusion3.com")
+| where SenderFromDomain !in~ ("exclusion1.org","exclusion2.edu","exclusion3.com") // if you need to exclude known intra-org senders that might get caught
 | project-reorder Timestamp, Filename, Subject, SenderDisplayName, SenderFromAddress,SenderFromDomain
 //| where OrgLevelPolicy has "Exchange" //uncomment this line out later to see wh ich ones were caught by the new exchange transport rule
 ```
