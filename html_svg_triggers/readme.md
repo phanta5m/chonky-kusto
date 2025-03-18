@@ -1,3 +1,12 @@
+## Hunt for phishing attachments arriving as .SVG's (bc your .HTML transport rules based on similar logic basically eliminated them as a vector)
+#### API call of 3 word lists (see list above)
+
+<p>Importing a trigger word list, list of safe senders, and subject phrases to exclude</p>
+
+- The first import is a list of words I've found to be correlated with phishing emails
+- The second one is a list of phrases that, when found in the subject field, should be excluded
+- The third one is a list of sender domains we want to exclude
+
 ```kusto
 let t = 24h;
 let sus_words = externaldata (Word: string) [
