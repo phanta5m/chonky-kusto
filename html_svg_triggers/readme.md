@@ -31,4 +31,4 @@ EmailEvents
 ```
 
 This has been highly effective in proactively finding malicious .SVG attachments coming in via email.
-It can and should be used as the logic on which Exchange Transport Rules can be made to block these types of attachments.
+It can and should serve as the logic for Transport Rules.
