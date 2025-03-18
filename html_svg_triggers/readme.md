@@ -1,4 +1,4 @@
-'''kusto
+```kusto
 let t = 24h;
 let sus_words = externaldata (Word: string) [
     h'https://raw.githubusercontent.com/phanta5m/chonky-kusto/refs/heads/main/html_svg_triggers/sus_words.md'
@@ -19,4 +19,4 @@ EmailEvents
 | where LatestDeliveryLocation has "inbox"
 | project Timestamp,Subject, SenderDisplayName,SenderFromAddress,FileName,FileType,DeliveryAction,NetworkMessageId, LatestDeliveryLocation
 //| project NetworkMessageIdWithComma = strcat(tostring(NetworkMessageId), ",")
-'''
+```
