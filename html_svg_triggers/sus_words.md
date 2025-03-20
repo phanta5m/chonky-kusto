@@ -66,4 +66,5 @@ transfer
 v.m
 v.m.
 vm
+viop
 voip
