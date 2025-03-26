@@ -37,6 +37,7 @@ notification
 password
 passwords
 payable
+payment
 payment advice
 payroll
 play
