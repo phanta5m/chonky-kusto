@@ -31,3 +31,6 @@ in.constantcontact.com
 update.procore.com
 bounce.mail.medscape.com
 calendar-server.bounces.google.com
+email.jamanetwork.com
+epic.inc
+hoosiercancer.org
