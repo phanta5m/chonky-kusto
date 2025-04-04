@@ -62,3 +62,4 @@ bounce.info.vinuni.edu.vn
 bounce.getresponse-mail.com
 bounce.e1.theathletic.com
 bounce.docguide.com
+bounce.campaign.simplivlearning.co
