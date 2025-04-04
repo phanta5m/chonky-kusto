@@ -1,0 +1,17 @@
+northwestern.edu
+nm.org
+cisco.com
+service-now.com
+bf10x.hubspotemail.net
+em6570.feedback.qiagen.com
+fidelityevents.com
+cp20.com
+em5762.klarna.com
+mailer.cfoleadership.com
+chicagofirst.org
+salesforce.com
+chase.com
+bsbsil.com
+bofa.com
+mail76.atl261.mcdlv.net
+k3.email.farm2.me
