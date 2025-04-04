@@ -36,3 +36,6 @@ epic.inc
 hoosiercancer.org
 members.wayfair.com
 microsoft.com
+steris.com
+sv.pptsend03.com
+trustifi.veracyte.com
