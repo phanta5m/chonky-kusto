@@ -29,3 +29,5 @@ emails.lunajoyhealth.com
 feathrmail.acrm.org
 in.constantcontact.com
 update.procore.com
+bounce.mail.medscape.com
+calendar-server.bounces.google.com
