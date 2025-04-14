@@ -42,3 +42,5 @@ google.com
 m.learn.coursera.org
 cms.gov
 mail.medscape.com
+contractors.roche.com
+salesforce.com
