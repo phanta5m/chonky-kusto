@@ -32,3 +32,13 @@ superiorambulance.com
 tigerman-mccurry.com
 u.northwestern.edu
 umich.edu
+answerunited.com
+d181.org
+healthgorilla.com
+service-now.com
+shopping.us.samsung.com
+ironwall.com
+google.com
+m.learn.coursera.org
+cms.gov
+mail.medscape.com
