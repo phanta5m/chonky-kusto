@@ -144,3 +144,5 @@ mail45.atl71.mcdlv.net
 mail121.atl31.mcdlv.net
 mail74.atl301.rsgsv.net
 mail119.suw91.mcdlv.net
+bounce.s13.mc.pd25.com
+bounce.s7.exacttarget.com
