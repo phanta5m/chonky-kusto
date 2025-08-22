@@ -4,6 +4,8 @@
 <li>A lot needs to go wrong in order for an attacker to leverage a sus driver</li>
 <li>This query can identify the devices in your environment that are susceptible</li>
 <li>The query was pulled from the LOLDrivers site, but slightly tweaked for functionality (ie the original syntax doesn't work, but this one does)</li>
+<li><a href="https://www.loldrivers.io/">loldrivers</a> — A great site for your sus driver investigations</li>
+
 </ul>
 
 ```kusto
