@@ -2,6 +2,7 @@
 # This script pulls the daily updated list of sus IPs from StamParm's github repo, and runs them through the Device Network Events on the Remote IP column.
 # The 'make_set' aggregates the connection actions by IP, while the 'where not' in line 15 removes any lines where only a connection attempt or acknowledgement was made.
 #
+```kusto
 let sus_IPs = externaldata(IP: string) [
     @"https://raw.githubusercontent.com/stamparm/ipsum/refs/heads/master/ipsum.txt"
 ] with (format="txt")
@@ -14,3 +15,4 @@ DeviceNetworkEvents
 | where RemoteIP in (sus_IPs)
 | where not(ActionType has_any ("ConnectionAttempt","ConnectionAcknowledged"))
 | summarize ActionType = make_set(ActionType) by RemoteIP
+```
