@@ -1,6 +1,6 @@
 #
 # This script pulls the daily updated list of sus IPs from StamParm's github repo, and runs them through the Device Network Events on the Remote IP column.
-# The 'make_set' aggregates the connection actions by IP, wihle the 'where not' in line 15 removes any lines where only a connection attempt or acknowledgement was made.
+# The 'make_set' aggregates the connection actions by IP, while the 'where not' in line 15 removes any lines where only a connection attempt or acknowledgement was made.
 #
 let sus_IPs = externaldata(IP: string) [
     @"https://raw.githubusercontent.com/stamparm/ipsum/refs/heads/master/ipsum.txt"
