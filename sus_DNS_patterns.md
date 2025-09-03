@@ -1,10 +1,14 @@
 ## Sus DNS patterns
-#### Excessively long DNS queries which can be indicative of C2 traffic
+#### Here's a detection I made, intended to run against Cisco DNS logs, looking for excessively long DNS queries which can be indicative of C2 traffic
 
-<p>Looks at DNS traffic, attempts to filter by long subdomain lengths, Base64 patterns, Hex Patterns, Random characters, etc</p>
+<p>Looks at DNS traffic, attempts to filter by: </p>
 
-- The first one lists risk profile determinations as assessed by Microsoft
-- The second one lists 30 days of changes to the user's account
+- FQDN's longer than 180 characters
+- Subdomains longer than 60 characters
+- Base64 patterns
+- Hex patterns
+- Random characters
+- Approximation of entropy like patterns
 
 ```kusto
 //DNS queries with suspicious characteristics
